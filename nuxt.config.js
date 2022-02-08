@@ -7,7 +7,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      {'http-equiv': 'X-UA-Compatible', content="IE=edge"},
+      {'http-equiv': 'X-UA-Compatible', content: "IE=edge"},
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' }
@@ -39,12 +39,13 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/dotenv'
   ],
 
   styleResources: {
     scss: [
-      '~/scss/main.scss'
+      './scss/main.scss'
     ]
   },
 
@@ -61,5 +62,9 @@ export default {
         require('autoprefixer')
       ]
     }
-  }
+  },
+
+  serverMiddleware: [
+    {path: '/.netlify/functions/movie', handler: '~/server-middleware/movie.js'}
+  ]
 }
