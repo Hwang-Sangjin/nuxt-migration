@@ -48,7 +48,7 @@ describe('components/Header.vue', () => {
 
   test('경로 정규표현식과 일치하지 않아야 합니다', () => {
     // 설정
-    const regExp = /^\/heropy/
+    const regExp = /^\/JIN/
     // 동작
     // 확인
     expect(wrapper.vm.isMatch(regExp)).toBe(false)

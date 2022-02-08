@@ -15,7 +15,7 @@ export default {
       {hid: 'og:title', property: 'og:title', content: 'Nuxt Movie App'},
       {hid: 'og:site_name', property: 'og:site_anem', content: "Nuxt Movie App"},
       {hid: 'og:description', property: 'og:description', content: 'The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users.'},
-      {hid: 'og:image', property: 'og:image', content: 'https://heropy.blog/css/images/logo.png'},
+      {hid: 'og:image', property: 'og:image', content: 'https://img1.daumcdn.net/thumb/C428x428/?scode=mtistory2&fname=https%3A%2F%2Ftistory4.daumcdn.net%2Ftistory%2F2102942%2Fattach%2Fc2a8c04c24064ea2a12c4a5594d3270a'},
       {hid: 'og:url', property: 'og:url', content: process.env.CLIENT_URL},
     ],
     link: [
